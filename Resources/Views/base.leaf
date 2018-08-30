@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    #embed("headContent")
+    #get(head)
+  </head>
+
+  <body>
+    #embed("navigationBar")
+    #get(body)
+    #embed("footer")
+  </body>
+
+</html>

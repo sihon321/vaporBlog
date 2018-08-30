@@ -1,0 +1,21 @@
+#set("head") {
+    <title>Log In</title>
+}
+
+#set("body") {
+  <!-- Page Heading -->
+<link href="/css/login.css" rel="stylesheet">
+  <div class="wrapper">
+    <form method="post" class="form-signin">
+      <h3 class="form-signin-heading">Please login</h2>
+      <input type="text" class="form-control" name="userID" placeholder="ID" required="" autofocus="" />
+      <input type="password" class="form-control" name="password" placeholder="Password" required=""/>
+      <label class="checkbox">
+        <input type="checkbox" value="remember-me" id="rememberMe" name="rememberMe"> Remember me </input>
+      </label>
+      <button class="btn-block" type="submit">Login</button>
+    </form>
+  </div>
+}
+
+#embed("base")

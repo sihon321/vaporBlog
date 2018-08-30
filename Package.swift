@@ -5,15 +5,20 @@ let package = Package(
     name: "sho59",
     dependencies: [
         // 💧 A server-side Swift web framework.
-        .package(url: "https://github.com/vapor/vapor.git", from: "3.0.0"),
-
-        // 🔵 Swift ORM (queries, models, relations, etc) built on SQLite 3.
-        .package(url: "https://github.com/vapor/fluent-sqlite.git", from: "3.0.0")
+        .package(url: "https://github.com/vapor/vapor.git", from: "3.0.0-rc"),
+        
+        // 🐘 Non-blocking, event-driven Swift client for PostgreSQL.
+        .package(url: "https://github.com/vapor/fluent-postgresql.git", from: "1.0.0"),
+        .package(url: "https://github.com/vapor/leaf.git", from: "3.0.0-rc"),
+        .package(url: "https://github.com/nodes-vapor/slugify", from: "1.0.0"),
+        .package(url: "https://github.com/vapor/auth.git", from: "2.0.0-rc"),
     ],
     targets: [
-        .target(name: "App", dependencies: ["FluentSQLite", "Vapor"]),
+        .target(name: "App", dependencies: ["FluentPostgreSQL", "Vapor", "Leaf", "Slugify", "Authentication"], exclude: [
+            "Public"]),
         .target(name: "Run", dependencies: ["App"]),
         .testTarget(name: "AppTests", dependencies: ["App"])
     ]
 )
+
 

@@ -1,0 +1,41 @@
+#set("head") {
+    <title>My Blog</title>
+}
+
+#set("body") {
+
+  <!-- Page Heading -->
+  <header class="masthead" style="background-image: url('/img/contact-bg.jpg')">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="page-heading">
+            <h1 class="my-4"> Category </h1>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="container">
+    #if(categories) {
+      #for(category in categories) {
+        <div class="row">
+          <div class="col-lg-4 col-sm-4 portfolio-item">
+            <div class="card h-80">
+              <a href="#"></a>
+              <div class="card-body">
+                <p class="card-text">#(category.id)</p>
+                <h4 class="card-title">
+                  <a href="#">#(category.name)</a>
+                </h4>
+              </div>
+            </div>
+          </div>
+      }
+    }
+  </div>
+}
+
+#embed("base")
