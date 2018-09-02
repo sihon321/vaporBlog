@@ -9,8 +9,7 @@
     <script src="http://netdna.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.js"></script>
 
     <!-- include summernote css/js -->
-    <link href="http://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.9/summernote.css" rel="stylesheet">
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.9/summernote.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/simplemde/latest/simplemde.min.css">
     <title>Sho59 Blog</title>
   </head>
 
@@ -82,23 +81,18 @@
 
         <div class="form-group">
           <label for="body">Contents</label>
-          <textarea id="summernote" name="body" class="form-control" value="#(Post.body)"
-          onsubmit="return postForm()"></textarea>
+            <textarea rows="10" name="body" type="text" class="form-control" id="inputBody" placeholder="Post Body">#(Post.body)</textarea>
         </div>
       <button type="submit" class="btn btn-primary">Submit</button>
     </form>
     </div>
 
     <!-- Summernote -->
-    <script type="text/javascript">
-    var markupStr = $('#summernote').summernote({
-    placeholder: 'Hello bootstrap 4',
-    tabsize: 2,
-    height: 100
-    });
-    var postForm = function() {
-	     var content = $('textarea[name="content"]').html($('#summernote').code());
-    }
+    <script src="https://cdn.jsdelivr.net/simplemde/latest/simplemde.min.js"></script>
+    <script>
+      $(document).ready(function() {
+      var simplemde = new SimpleMDE();
+      });
     </script>
     #embed("footer")
   </body>

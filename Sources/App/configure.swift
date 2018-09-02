@@ -1,6 +1,7 @@
 import FluentPostgreSQL
 import Vapor
 import Leaf
+import LeafMarkdown
 import Authentication
 
 /// Called before your application initializes.
@@ -9,6 +10,9 @@ public func configure(_ config: inout Config, _ env: inout Environment, _ servic
     try services.register(FluentProvider())
     try services.register(PostgreSQLProvider())
     try services.register(LeafProvider())
+    var tags = LeafTagConfig.default()
+    tags.use(Markdown(), as: "markdown")
+    services.register(tags)
     try services.register(AuthenticationProvider())
     
     /// Configure migrations
