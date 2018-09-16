@@ -10,7 +10,6 @@ let package = Package(
         // 🐘 Non-blocking, event-driven Swift client for PostgreSQL.
         .package(url: "https://github.com/vapor/fluent-postgresql.git", from: "1.0.0"),
         .package(url: "https://github.com/vapor/leaf.git", from: "3.0.0-rc"),
-        .package(url: "https://github.com/nodes-vapor/slugify", from: "1.0.0"),
         .package(url: "https://github.com/vapor/auth.git", from: "2.0.0-rc"),
         .package(url: "https://github.com/vapor-community/markdown-provider.git", .upToNextMajor(from: "2.0.0")),
         ],
@@ -20,7 +19,6 @@ let package = Package(
                                "Vapor",
                                "LeafMarkdown",
                                "Leaf",
-                               "Slugify",
                                "Authentication"],
                 exclude: ["Public"]),
         .target(name: "Run", dependencies: ["App"]),

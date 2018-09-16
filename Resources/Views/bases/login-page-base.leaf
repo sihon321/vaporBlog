@@ -1,0 +1,17 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    #embed("headContent")
+    #get(head)
+    <title>Sho59 Blog</title>
+  </head>
+
+  <body class="login-page sidebar-collapse">
+    #embed("navigationBar")
+    #get(body)
+    #embed("footer")
+  </body>
+
+</html>

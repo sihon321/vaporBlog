@@ -36,8 +36,8 @@ public func configure(_ config: inout Config, _ env: inout Environment, _ servic
     
     // Configure a database
     var databases = DatabasesConfig()
-    let database = PostgreSQLDatabase(config: PostgreSQLDatabaseConfig(hostname: "localhost",
-                                                                       port: 32768,
+    let database = PostgreSQLDatabase(config: PostgreSQLDatabaseConfig(hostname: "192.168.99.100",
+                                                                       port: 32769,
                                                                        username: "sihoon",
                                                                        database: "postgres",
                                                                        password: "tlgnsdl1",

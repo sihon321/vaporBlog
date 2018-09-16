@@ -9,7 +9,7 @@ struct WebsiteController: RouteCollection {
     authSessionRoutes.get("categories",use: categoryHandler)
     authSessionRoutes.get("posts", Post.parameter, use: postHandler)
     authSessionRoutes.get("about", use: aboutHandler)
-    authSessionRoutes.get("contact", use: contactHandler)
+
     authSessionRoutes.get("login", use: loginHandler)
     authSessionRoutes.post("login", use: loginPostHandler)
     
@@ -48,11 +48,6 @@ struct WebsiteController: RouteCollection {
   func aboutHandler(_ req: Request) throws -> Future<View> {
     let context = EmptyContext()
     return try req.leaf().render("about", context)
-  }
-  
-  func contactHandler(_ req: Request) throws -> Future<View> {
-    let context = EmptyContext()
-    return try req.leaf().render("contact", context)
   }
   
   func postEditHandler(_ req: Request) throws -> Future<View> {
