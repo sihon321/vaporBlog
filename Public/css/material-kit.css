@@ -6091,7 +6091,7 @@ button.close {
 .carousel-indicators {
   position: absolute;
   right: 0;
-  bottom: 10px;
+  bottom: 20px;
   left: 0;
   z-index: 15;
   display: flex;
@@ -11936,7 +11936,7 @@ fieldset[disabled] .form-group.is-focused .form-check .form-check-label {
 }
 
 .carousel .carousel-indicators {
-  bottom: 5px;
+  bottom: 55px;
 }
 
 .carousel .carousel-indicators li,

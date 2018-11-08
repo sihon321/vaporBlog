@@ -1,5 +1,6 @@
 #set("head") {
-
+  <link rel="stylesheet" href="/css/prismHighlighting.css">
+  <script src="/js/prismHighlighting.js"></script>
 }
 
 #set("body") {
@@ -23,7 +24,7 @@
       <div class="section text-center">
         <div class="row">
           <div class="col-md-8 ml-auto mr-auto">
-            <h4 class="description">#markdown(post.body)</h5>
+            <h5 class="description">#markdown(post.body)</h5>
           </div>
         </div>
       </div>

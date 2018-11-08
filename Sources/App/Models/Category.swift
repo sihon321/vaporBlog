@@ -11,9 +11,10 @@ import FluentPostgreSQL
 final class Category: Codable {
     var id: Int?
     var name: String
-    
-    init(name: String) {
+    var description: String
+    init(name: String, description: String) {
         self.name = name
+        self.description = description
     }
 }
 

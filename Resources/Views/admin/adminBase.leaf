@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    #embed("admin/headContent")
+    #get(head)
+  </head>
+
+  <body>
+    #embed("admin/verticalNavigationBar")
+    #get(body)
+    #embed("admin/footer")
+  </body>
+
+</html>

@@ -16,6 +16,7 @@ struct WebsiteController: RouteCollection {
     let protectedRoutes = authSessionRoutes.grouped(RedirectMiddleware<User>(path: "/login"))
     protectedRoutes.get("postEdit", use: postEditHandler)
     protectedRoutes.post("createPost", use: createPostHandler)
+    protectedRoutes.get("dashboard", use: dashBoardHandler)
   }
   
   func indexHandler(_ req: Request) throws -> Future<View> {
@@ -53,7 +54,7 @@ struct WebsiteController: RouteCollection {
   func postEditHandler(_ req: Request) throws -> Future<View> {
     return Category.query(on: req).all().flatMap(to: View.self) { categories in
       let context = CategoryContext(categories: categories.isEmpty ? nil : categories)
-      return try req.leaf().render("postEdit", context)
+      return try req.leaf().render("admin/postEdit", context)
     }
   }
   
@@ -92,6 +93,11 @@ struct WebsiteController: RouteCollection {
                                 return req.redirect(to: "/")
       }
     }
+  }
+  
+  func dashBoardHandler(_ req: Request) throws -> Future<View> {
+    let context = EmptyContext()
+    return try req.leaf().render("admin/dashboard", context)
   }
 }
 

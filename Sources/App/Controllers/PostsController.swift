@@ -9,7 +9,8 @@ import Vapor
 
 struct PostsController: RouteCollection {
     func boot(router: Router) throws {
-        let postsRoute = router.grouped("api", "posts")
+        let authSessionRoutes = router.grouped(User.authSessionsMiddleware())
+        let postsRoute = authSessionRoutes.grouped("api", "posts")
         postsRoute.get(use: getAllHandler)
         postsRoute.get(Post.parameter, use: getHandler)
         postsRoute.get(Post.parameter, "categories", use: getCategoriesHandler)
