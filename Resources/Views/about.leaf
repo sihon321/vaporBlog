@@ -28,15 +28,17 @@
           </div>
         </div>
         <div class="description text-center">
-          <p>An artist of considerable range, Chet Faker &#x2014; the name taken by Melbourne-raised, Brooklyn-based Nick Murphy &#x2014; writes, performs and records all of his own music, giving it a warm, intimate feel with a solid groove structure. </p>
+          <p>티몬에서 iOS 앱 개발을 담당하고 있는 개발자입니다. <br>
+            &#x2014; UI, UX, iOS, vapor에 관심이 많으며, 영상 처리 framework에도 많은 관심이 있습니다 &#x2014; <br>
+            contact me: sihon321@gmail.com </p>
         </div>
         <div class="row">
           <div class="col-md-6 ml-auto mr-auto">
             <div class="profile-tabs">
               <ul class="nav nav-pills nav-pills-icons justify-content-center" role="tablist">
                 <li class="nav-item">
-                  <a class="nav-link active" href="#studio" role="tab" data-toggle="tab">
-                    <i class="material-icons">camera</i> Studio
+                  <a class="nav-link active" href="#technic" role="tab" data-toggle="tab">
+                    <i class="material-icons">camera</i> Technic
                   </a>
                 </li>
                 <li class="nav-item">
@@ -54,41 +56,39 @@
           </div>
         </div>
         <div class="tab-content tab-space">
-          <div class="tab-pane active text-center gallery" id="studio">
+          <div class="tab-pane active text-center gallery" id="technic">
             <div class="row">
               <div class="col-md-3 ml-auto">
-                <img src="/img/examples/studio-1.jpg" class="rounded">
-                <img src="/img/examples/studio-2.jpg" class="rounded">
+                <img src="/img/examples/technic-1.png" class="rounded">
+                <img src="/img/examples/technic-2.png" class="rounded">
               </div>
               <div class="col-md-3 mr-auto">
-                <img src="/img/examples/studio-5.jpg" class="rounded">
-                <img src="/img/examples/studio-4.jpg" class="rounded">
+                <img src="/img/examples/technic-3.png" class="rounded">
+                <img src="/img/examples/technic-4.png" class="rounded">
               </div>
             </div>
           </div>
           <div class="tab-pane text-center gallery" id="works">
             <div class="row">
               <div class="col-md-3 ml-auto">
-                <img src="/img/examples/olu-eletu.jpg" class="rounded">
-                <img src="/img/examples/clem-onojeghuo.jpg" class="rounded">
-                <img src="/img/examples/cynthia-del-rio.jpg" class="rounded">
+                <img src="/img/examples/work-1.png" class="rounded">
+                <img src="/img/examples/work-2.png" class="rounded">
               </div>
               <div class="col-md-3 mr-auto">
-                <img src="/img/examples/mariya-georgieva.jpg" class="rounded">
-                <img src="/img/examples/clem-onojegaw.jpg" class="rounded">
+                <img src="/img/examples/work-3.png" class="rounded">
+                <img src="/img/examples/work-4.png" class="rounded">
               </div>
             </div>
           </div>
           <div class="tab-pane text-center gallery" id="favorite">
             <div class="row">
               <div class="col-md-3 ml-auto">
-                <img src="/img/examples/mariya-georgieva.jpg" class="rounded">
-                <img src="/img/examples/studio-3.jpg" class="rounded">
+                <img src="/img/examples/favorite-1.png" class="rounded">
+                <img src="/img/examples/favorite-2.png" class="rounded">
               </div>
               <div class="col-md-3 mr-auto">
-                <img src="/img/examples/clem-onojeghuo.jpg" class="rounded">
-                <img src="/img/examples/olu-eletu.jpg" class="rounded">
-                <img src="/img/examples/studio-1.jpg" class="rounded">
+                <img src="/img/examples/favorite-3.jpg" class="rounded">
+                <img src="/img/examples/favorite-4.jpg" class="rounded">
               </div>
             </div>
           </div>

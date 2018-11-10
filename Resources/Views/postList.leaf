@@ -1,0 +1,52 @@
+#set("head") {
+
+}
+
+#set("body") {
+  <div class="page-header header-filter header-small" data-parallax="true" style="background-image: url('/img/bg10.jpg');">
+  	<div class="container">
+  		<div class="row">
+  			<div class="col-md-8 ml-auto mr-auto text-center">
+  				<h2 class="title">Post List</h2>
+  			</div>
+  		</div>
+  	</div>
+  </div>
+
+  <div class="main main-raised">
+    <div class="container">
+      <div class="section text-center">
+        <!-- Main Content -->
+        #if(posts) {
+          <div class="container">
+            <div class="row">
+
+                #for(post in posts) {
+                  <div class="col-lg-8 col-md-10 mx-auto">
+                    <div class="card card-nav-tabs text-center">
+                      <div class="card-header card-header-primary">
+                        Featured
+                      </div>
+                      <div class="card-body">
+                        <h4 class="card-title">#(post.title)</h4>
+                        <p class="card-text">#(post.subTitle)</p>
+                        <a href="/posts/#(post.id)" class="btn btn-primary">Go detail</a>
+                      </div>
+                      <div class="card-footer text-muted">
+                        #date(post.createdAt)
+                      </div>
+                    </div>
+                  </div>
+                }
+                <!-- Pager -->
+
+
+            </div>
+          </div>
+        }
+      </div>
+    </div>
+  </div>
+}
+
+#embed("bases/blog-post-base")

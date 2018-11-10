@@ -6,10 +6,11 @@ struct WebsiteController: RouteCollection {
   func boot(router: Router) throws {
     let authSessionRoutes = router.grouped(User.authSessionsMiddleware())
     authSessionRoutes.get(use: indexHandler)
-    authSessionRoutes.get("categories",use: categoryHandler)
+    authSessionRoutes.get("postList", use: postListHandler)
+    authSessionRoutes.get("categories", use: categoryHandler)
     authSessionRoutes.get("posts", Post.parameter, use: postHandler)
     authSessionRoutes.get("about", use: aboutHandler)
-
+    
     authSessionRoutes.get("login", use: loginHandler)
     authSessionRoutes.post("login", use: loginPostHandler)
     
@@ -21,8 +22,16 @@ struct WebsiteController: RouteCollection {
   
   func indexHandler(_ req: Request) throws -> Future<View> {
     return Post.query(on: req).all().flatMap(to: View.self) { posts in
-      let context = IndexContent(title: "Homepage", posts: posts.isEmpty ? nil : posts)
+      let postContext = posts.count > 5 ? Array(posts[0...4]) : posts
+      let context = IndexContent(title: "Homepage", posts: posts.isEmpty ? nil : postContext)
       return try req.leaf().render("index", context)
+    }
+  }
+  
+  func postListHandler(_ req: Request) throws -> Future<View> {
+    return Post.query(on: req).all().flatMap(to: View.self) { posts in
+      let context = IndexContent(title: "post list", posts: posts.isEmpty ? nil : posts)
+      return try req.leaf().render("postList", context)
     }
   }
   
