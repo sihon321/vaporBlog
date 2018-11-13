@@ -3,7 +3,7 @@
     <div class="container">
         <div class="navbar-translate">
             <a class="navbar-brand" href="/">
-              Sho59 Blog </a>
+            Vapor Blog </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" aria-expanded="false" aria-label="Toggle navigation">
               <span class="sr-only">Toggle navigation</span>
               <span class="navbar-toggler-icon"></span>
@@ -28,17 +28,17 @@
                   </div>
                 </li>
           				<li class="nav-item">
-          					<a class="nav-link" rel="tooltip" title="" data-placement="bottom" href="https://www.linkedin.com/in/sihoon-oh-a75a20133/" target="_blank" data-original-title="Follow me on Linkedin">
+          					<a class="nav-link" rel="tooltip" title="" data-placement="bottom" href="https://www.linkedin.com/" target="_blank" data-original-title="Follow me on Linkedin">
           						<i class="fa fa-linkedin"></i>
           					</a>
           				</li>
           				<li class="nav-item">
-          					<a class="nav-link" rel="tooltip" title="" data-placement="bottom" href="https://github.com/sihon321" target="_blank" data-original-title="Follow me on Github">
+          					<a class="nav-link" rel="tooltip" title="" data-placement="bottom" href="https://github.com/" target="_blank" data-original-title="Follow me on Github">
           						<i class="fa fa-github"></i>
           					</a>
           				</li>
           				<li class="nav-item">
-          					<a class="nav-link" rel="tooltip" title="" data-placement="bottom" href="https://leetcode.com/sho59/" target="_blank" data-original-title="My Leetcode">
+          					<a class="nav-link" rel="tooltip" title="" data-placement="bottom" href="https://google.com/" target="_blank" data-original-title="My Leetcode">
                       <i class="fa fa-code"></i>
           					</a>
           				</li>

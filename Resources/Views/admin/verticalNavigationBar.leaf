@@ -18,12 +18,12 @@
 
     <div class="user">
         <div class="photo">
-            <img src="/img/faces/profile1.PNG" />
+            <img src="/img/faces/kendall.jpg" />
         </div>
         <div class="user-info">
             <a data-toggle="collapse" href="#collapseExample" class="username">
                 <span>
-                   Sihoon Oh
+                   Christian Louboutin
                   <b class="caret"></b>
                 </span>
             </a>

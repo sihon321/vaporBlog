@@ -16,25 +16,25 @@
   <div class="main main-raised">
     <div class="projects-2" id="projects-2">
       <div class="container">
-          <div class="col-md-4">
-              <div class="card card-plain">
+        <div class="col-md-4">
+          <div class="card card-plain">
                 #if(categories) {
                   #for(category in categories) {
                     <div class="card" style="width: 20rem;">
-                    <div class="card-body">
-                      <h4 class="card-title">#(category.name)</h4>
-                      <h6 class="card-subtitle mb-2 text-muted">#(category.id)</h6>
-                      <p class="card-text">#(category.description)</p>
-                      <a href="#0" class="card-link">More</a>
-                    </div>
+                      <div class="card-body">
+                        <h4 class="card-title">#(category.name)</h4>
+                        <h6 class="card-subtitle mb-2 text-muted">#(category.id)</h6>
+                        <p class="card-text">#(category.description)</p>
+                        <a href="#0" class="card-link">More</a>
+                      </div>
                   </div>
-      }
-    }
+                }
+              }
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
-</div>
-</div>
-</div>
-</div>
 }
 
 #embed("bases/blog-post-base")
