@@ -32,10 +32,26 @@ This is an Template for using vapor and material-kit
 - PostgreSql 10.5-1.pgdg90+1
 
 ## Preview
-![Alt text](/Public/img/readme/readme1.png)
-![Alt text](/Public/img/readme/readme2.png)
-![Alt text](/Public/img/readme/readme3.png)
-![Alt text](/Public/img/readme/readme4.png)
-![Alt text](/Public/img/readme/readme5.png)
-![Alt text](/Public/img/readme/readme6.png)
-![Alt text](/Public/img/readme/readme7.png)
+__home__
+![Alt text](/Public/img/readme/readme-1.png)
+
+__syntax highlight__
+![Alt text](/Public/img/readme/readme-2.png)
+
+__pos list__
+![Alt text](/Public/img/readme/readme-3.png)
+
+__profile__
+![Alt text](/Public/img/readme/readme-4.png)
+
+__login__
+![Alt text](/Public/img/readme/readme-5.png)
+
+__categories__
+![Alt text](/Public/img/readme/readme-6.png)
+
+__dashboard__
+![Alt text](/Public/img/readme/readme-7.png)
+
+__dashboard edit post__
+![Alt text](/Public/img/readme/readme-8.png)
