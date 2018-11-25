@@ -1,6 +1,4 @@
 <p align="center">
-    <br>
-    <br>
     <a href="http://docs.vapor.codes/3.0/">
         <img src="http://img.shields.io/badge/read_the-docs-2196f3.svg" alt="Documentation">
     </a>
@@ -17,6 +15,7 @@
         <img src="http://img.shields.io/badge/swift-4.1-brightgreen.svg" alt="Swift 4.1">
     </a>
 </p>
+
 # Vapor BLog
 This is an Template for using vapor and material-kit
 
