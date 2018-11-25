@@ -46,9 +46,9 @@ public func configure(_ config: inout Config, _ env: inout Environment, _ servic
   
     let database = PostgreSQLDatabase(config: PostgreSQLDatabaseConfig(hostname: "192.168.99.100",
                                                                        port: 32768,
-                                                                       username: "test",
+                                                                       username: "sihoon",
                                                                        database: "postgres",
-                                                                       password: "test",
+                                                                       password: "tlgnsdl1",
                                                                        transport: .cleartext))
     databases.add(database: database, as: .psql)
     services.register(databases)

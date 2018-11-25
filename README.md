@@ -17,7 +17,7 @@
 </p>
 
 # Vapor Blog
-This is an Template for using vapor and material-kit
+This is a blog template for using vapor and material-kit
 
 ## Features
 
