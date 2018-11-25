@@ -1,6 +1,7 @@
+# Vapor BLog
+This is an Template for using vapor and material-kit
+
 <p align="center">
-    # Vapor BLog
-    This is an Template for using vapor and material-kit
     <br>
     <br>
     <a href="http://docs.vapor.codes/3.0/">
