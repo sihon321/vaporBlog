@@ -29,6 +29,13 @@ public func configure(_ config: inout Config, _ env: inout Environment, _ servic
     /// Register middleware
     var middlewares = MiddlewareConfig() // Create _empty_ middleware config
     middlewares.use(FileMiddleware.self) // Serves files from `Public/` directory
+    let corsConfiguration = CORSMiddleware.Configuration(
+      allowedOrigin: .all,
+      allowedMethods: [.GET, .POST, .PUT, .OPTIONS, .DELETE, .PATCH],
+      allowedHeaders: [.accept, .authorization, .contentType, .origin, .xRequestedWith, .userAgent, .accessControlAllowOrigin]
+    )
+    let corsMiddleware = CORSMiddleware(configuration: corsConfiguration)
+    middlewares.use(corsMiddleware)
     middlewares.use(ErrorMiddleware.self) // Catches errors and converts to HTTP response
     config.prefer(MemoryKeyedCache.self, for: KeyedCache.self)
     middlewares.use(SessionsMiddleware.self)
@@ -36,11 +43,12 @@ public func configure(_ config: inout Config, _ env: inout Environment, _ servic
     
     // Configure a database
     var databases = DatabasesConfig()
+  
     let database = PostgreSQLDatabase(config: PostgreSQLDatabaseConfig(hostname: "192.168.99.100",
                                                                        port: 32768,
-                                                                       username: "sihoon",
+                                                                       username: "test",
                                                                        database: "postgres",
-                                                                       password: "tlgnsdl1",
+                                                                       password: "test",
                                                                        transport: .cleartext))
     databases.add(database: database, as: .psql)
     services.register(databases)

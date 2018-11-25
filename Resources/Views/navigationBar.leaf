@@ -38,7 +38,7 @@
           					</a>
           				</li>
           				<li class="nav-item">
-          					<a class="nav-link" rel="tooltip" title="" data-placement="bottom" href="https://google.com/" target="_blank" data-original-title="My Leetcode">
+          					<a class="nav-link" rel="tooltip" title="" data-placement="bottom" href="https://google.com/" target="_blank" data-original-title="Google">
                       <i class="fa fa-code"></i>
           					</a>
           				</li>

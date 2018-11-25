@@ -12,6 +12,7 @@ let package = Package(
         .package(url: "https://github.com/vapor/leaf.git", from: "3.0.0-rc"),
         .package(url: "https://github.com/vapor/auth.git", from: "2.0.0-rc"),
         .package(url: "https://github.com/vapor-community/markdown-provider.git", .upToNextMajor(from: "2.0.0")),
+        .package(url: "https://github.com/malcommac/UAParserSwift.git", from: "1.0.1"),
         ],
     targets: [
         .target(name: "App",
@@ -19,7 +20,8 @@ let package = Package(
                                "Vapor",
                                "LeafMarkdown",
                                "Leaf",
-                               "Authentication"],
+                               "Authentication",
+                               "UAParserSwift"],
                 exclude: ["Public"]),
         .target(name: "Run", dependencies: ["App"]),
         .testTarget(name: "AppTests", dependencies: ["App"])

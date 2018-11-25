@@ -9,7 +9,7 @@
   <body>
     #embed("admin/verticalNavigationBar")
     #get(body)
-    #embed("admin/footer")
+
   </body>
 
 </html>

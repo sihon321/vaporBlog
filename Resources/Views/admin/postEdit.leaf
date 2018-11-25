@@ -20,7 +20,7 @@
 
   <body>
 
-    <div class="wrapper" style="background-image: url('/img/city.jpg')">
+    <div class="wrapper">
       #embed("admin/verticalNavigationBar")
 <div class="main-panel">
   #embed("admin/horizontalNavigationBar")
@@ -31,7 +31,7 @@
           <div class="content">
           <div class="container-fluid">
           <div class="row">
-            <div class="col-md-12">
+            <div class="col-md-12"></br>
               <form class="form-article-update" method="post" action="/createPost">
                 <div class="form-group">
                   <label for="title">Title</label>
@@ -57,7 +57,7 @@
                 </div>
 
                 <div class="form-group">
-                  <label for="body">Contents</label>
+                  <label for="body">Contents</label></br>
                     <textarea rows="10" name="body" type="text" class="form-control" id="inputBody" placeholder="Post Body">#(Post.body)</textarea>
                 </div>
               <button type="submit" class="btn btn-primary">Submit</button>
@@ -80,5 +80,6 @@
       });
     </script>
         #embed("admin/footer")
+    #embed("admin/js")
   </body>
 </html>

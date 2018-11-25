@@ -1,5 +1,6 @@
 <p align="center">
-    <img src="https://user-images.githubusercontent.com/1342803/36623515-7293b4ec-18d3-11e8-85ab-4e2f8fb38fbd.png" width="320" alt="API Template">
+    # Vapor BLog
+    This is an Template for using vapor and material-kit
     <br>
     <br>
     <a href="http://docs.vapor.codes/3.0/">
@@ -18,4 +19,24 @@
         <img src="http://img.shields.io/badge/swift-4.1-brightgreen.svg" alt="Swift 4.1">
     </a>
 </p>
-# MyBlog-vapor
+
+## Features
+
+- Authentication
+- Markdown support and editor
+- Syntax Highlighting
+- Dashboard (ing..)
+
+## Requirements
+- Vapor 3.0+
+- Swift 4.1+
+- PostgreSql 10.5-1.pgdg90+1
+
+## Preview
+![Alt text](/Public/img/readme/readme1.png)
+![Alt text](/Public/img/readme/readme2.png)
+![Alt text](/Public/img/readme/readme3.png)
+![Alt text](/Public/img/readme/readme4.png)
+![Alt text](/Public/img/readme/readme5.png)
+![Alt text](/Public/img/readme/readme6.png)
+![Alt text](/Public/img/readme/readme7.png)
