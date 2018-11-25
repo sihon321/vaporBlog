@@ -38,7 +38,7 @@ __home__
 __syntax highlight__
 ![Alt text](/Public/img/readme/readme-2.png)
 
-__pos list__
+__post list__
 ![Alt text](/Public/img/readme/readme-3.png)
 
 __profile__
