@@ -1,6 +1,3 @@
-# Vapor BLog
-This is an Template for using vapor and material-kit
-
 <p align="center">
     <br>
     <br>
@@ -20,6 +17,8 @@ This is an Template for using vapor and material-kit
         <img src="http://img.shields.io/badge/swift-4.1-brightgreen.svg" alt="Swift 4.1">
     </a>
 </p>
+# Vapor BLog
+This is an Template for using vapor and material-kit
 
 ## Features
 
